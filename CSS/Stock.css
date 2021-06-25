@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(240, 235, 247);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+}
+
+#fa {
+    color: white;
+    font-size: 80px;
+}
+
+.container .sidebar {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 21, 21);
+    top: 0px;
+    left: 0px;
+    /* position: fixed; */
+}
+
+.list {
+    margin: 80px;
+    text-align: center;
+}
+
+.list ul li {
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.container .sidebar .list ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 10px;
+    margin: 12px;
+    border-bottom: 2px solid rgba(119, 247, 15, 0.973);
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+}
+
+.container .sidebar ul li a:hover,
+.container .sidebar ul li a.active {
+    color: #0c7db1;
+    background: white;
+    border-right: 2px solid rgb(81, 44, 214);
+}
+
+.container .sidebar ul li a:hover .icon,
+.container .sidebar ul li a:active .icon {
+    color: #0c7db1;
+}
+
+.container .sider ul li a:hover::before,
+.container .sider ul li a:active::before {
+    display: block;
+}
+
+.container .sidebar .profile img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+}
+
+.title {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(24, 21, 21);
+    color: white;
+    text-align: center;
+}
+
+.title h2 {
+    position: relative;
+    top: 40px;
+    font-size: 1.5rem;
+}
+
+form {
+    padding: 30px;
+    border: 1px solid rgb(192, 192, 192);
+    display: grid;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input {
+    padding: 9px;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 5px;
+    outline: none;
+    font-size: medium;
+}
+
+button {
+    padding: 10px 12px;
+    width: 20%;
+    font-size: medium;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    border: solid 1px rgb(100, 83, 83);
+    transition: ease-out 0.5s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0c7db1;
+    transition: ease-in 0.5s;
+    color: white;
+}
+
+.status-out-ofstock {
+    color: red;
+}
+
+.status-withinstock {
+    color: orange;
+}
+
+.status-instock {
+    color: green;
+}
+
+#stock-detail {
+    text-align: center;
+    padding: 2px;
+}

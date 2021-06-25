@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Item</title>
+    <link rel="stylesheet" href="Additem.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+</head>
+
+<body>
+
+    <div class="backdrop hide"></div>
+    <div class="productDetails hide">
+        <div class="cancelIcon">
+            <i class="fa fa-times" aria-hidden="true"></i>
+
+        </div>
+        <div class="editbackdrop  hide"></div>
+        <div class="edit-product hide">
+            <div class="EditcancelIcon">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <div class="EDIT-DIVCONTAINER">
+                <h3> Edit Items</h3>
+                <div>
+                    <label for=""> Name  &nbsp;</label>&nbsp;&nbsp;
+                    <select name="" id="Name-Kind">
+                            <option value="">None</option>
+                            <option value="">Shirt</option>
+                            <option value="">Shoes</option>
+                            <option value="">Phone</option>
+                            <option value="">Bags</option>
+                            <option value="">Dress</option>
+                            <option value="">Long White Dress</option>
+                            <option value="">Computer</option>
+                            <option value="">Furniture</option>
+                            <option value="">Jean</option>
+                        </select>
+                </div>
+                <div>
+                    <label for=""> Description</label>
+                    <select name="quality" id="Show-description">
+                            <option value=""> Good quality</option>
+                            <option value="">Better quality</option>
+                            <option value="">Best quality</option>
+                            <option value="">Attractive things</option>
+                            <option value="">Cheap</option>
+                            <option value="">Lower price</option>
+                            <option value="">High price</option>
+                            <option value="">Comfortable things</option>
+                        </select>
+                </div>
+
+                <div>
+                    <label for=""> Quantity</label>
+                    <select name="Choose-number" id="number">
+                                <option value="">0</option>
+                                <option value="list">1</option>
+                                <option value="list">2</option>
+                                <option value="list">3</option>
+                                <option value="list">4</option>
+                                <option value="list">5</option>
+                                <option value="list">6</option>
+                                <option value="list">7</option>
+                                <option value="list">8</option>
+                                <option value="list">9</option>
+                                <option value="list">10</option>
+                            </select>
+                </div>
+
+                <div>
+                    <label for=""> Category</label>
+                    <select name="Coose-number" id="Kind">
+                                <option value="">Grade 5</option>
+                                <option value="">Grade 10</option>
+                                <option value="">Grade 3</option>
+                                <option value="">Grade 2</option>
+                                <option value="">Grade 6</option>
+                                <option value="">Grade 1</option>
+                                <option value="">Grade 7</option>
+                                <option value="">Grade 4</option>
+                            </select>
+                </div>
+
+                <div>
+                    <label for=""> Price</label>
+                    <select name="" id="Cost">
+                            <option value="">60.00</option>
+                            <option value="">80,00</option>
+                            <option value="">0.00</option>
+                            <option value="">70.00</option>
+                            <option value="">90.00</option>
+                            <option value="">40.00</option>
+                            <option value="">80.00</option>
+                            <option value="">50.00</option>
+                        </select>
+                </div>
+
+                <div> <button id="saveButton" type="submit">Save</button></div>
+            </div>
+
+        </div>
+
+        <table>
+
+
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Total</th>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <div class="profile">
+                <i class="fa fa-tachometer" id="fa"></i>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="Additem.html"><i class="fa fa-shopping-cart">Add Items</i></a>
+                    </li>
+                    <li>
+                        <a href="stock.html">Update quantity or Stock</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="title">
+                <h2>Inventory Management Dashboard</h2>
+            </div>
+            <br />
+            <br />
+            <form class="add-item">
+                <h3>ADD AN ITEM</h3>
+                <br />
+                <br />
+                <div class="group">
+                    <div class="group-containers">
+                        <label for="Area">
+                        <h2>Name</h2> </label>
+                        <select name="" class="selectProd" id="Name-Kind">
+                            <option value="">None</option>
+                            <option value="">Shirt</option>
+                            <option value="">Shoes</option>
+                            <option value="">Phone</option>
+                            <option value="">Bags</option>
+                            <option value="">Dress</option>
+                            <option value="">Long White Dress</option>
+                            <option value="">Computer</option>
+                            <option value="">Furniture</option>
+                            <option value="">Jean</option>
+                        </select>
+
+                        <br />
+                        <br />
+                        <label for="Area">
+                        <h2>Description</h2>
+                        <select class="selectProd" name="quality" id="Show-description">
+                            <option value=""> Good quality</option>
+                            <option value="">Better quality</option>
+                            <option value="">Best quality</option>
+                            <option value="">Attractive things</option>
+                            <option value="">Cheap</option>
+                            <option value="">Lower price</option>
+                            <option value="">High price</option>
+                            <option value="">Comfortable things</option>
+                        </select>
+                        </label>
+                        <br />
+                        <br />
+                        <label for="Area">
+                            <h2>Quantity</h2>
+                            <select class="selectProd" name="Choose-number" id="number">
+                                <option value="">0</option>
+                                <option value="list">1</option>
+                                <option value="list">2</option>
+                                <option value="list">3</option>
+                                <option value="list">4</option>
+                                <option value="list">5</option>
+                                <option value="list">6</option>
+                                <option value="list">7</option>
+                                <option value="list">8</option>
+                                <option value="list">9</option>
+                                <option value="list">10</option>
+                            </select>
+                        </label>
+                        <br />
+                        <br />
+                        <label for="Area">
+
+                    </div>
+                       
+                <div class="group-containers">
+                            <h2>Category</h2>
+                            <select class="selectProd" name="Coose-number" id="Kind">
+                                <option value="">Grade 5</option>
+                                <option value="">Grade 10</option>
+                                <option value="">Grade 3</option>
+                                <option value="">Grade 2</option>
+                                <option value="">Grade 6</option>
+                                <option value="">Grade 1</option>
+                                <option value="">Grade 7</option>
+                                <option value="">Grade 4</option>
+                            </select>
+                            </select>
+                    </label>
+                        <br />
+                        <br />
+                        <label for="Area">
+                        <h2>Price</h2>
+                        <select class="selectProd" name="" id="Cost">
+                            <option value="">60.00</option>
+                            <option value="">80,00</option>
+                            <option value="">0.00</option>
+                            <option value="">70.00</option>
+                            <option value="">90.00</option>
+                            <option value="">40.00</option>
+                            <option value="">80.00</option>
+                            <option value="">50.00</option>
+                        </select>
+                    </label>
+                        <br />
+                        <br />
+                        <label for="total-price">
+                        <h2>Total</h2>
+                        <select class="selectProd" name="" id="Total-price">
+                            <option value="">Ghc60.00</option>
+                            <option value="">Ghc100.00</option>
+                            <option value="">Gh150.00</option>
+                            <option value="">Ghc200.00</option>
+                            <option value="">Ghc250.00</option>
+                            <option value="">Ghc300.00</option>
+                            <option value="">Ghc350.00</option>
+                            <option value="">Ghc400.00</option>
+                        </select>
+                    </label>
+                        <button id="submitButton" type="submit">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="Javascript/Additem.js"></script>
+</body>
+
+</html>
